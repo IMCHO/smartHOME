@@ -1,0 +1,15 @@
+module.exports=(sequelize,DataTypes)=>(
+    sequelize.define('formula',{
+        drying_index:{
+            type:DataTypes.INTEGER,
+            allowNull:true,
+        },
+        discomfort_index:{
+            type:DataTypes.INTEGER,
+            allowNull:true,
+        },
+    },{
+        timestamps:true,
+        paranoid:true,
+    })
+);

@@ -1,0 +1,16 @@
+module.exports=(sequelize,DataTypes)=>(
+    sequelize.define('sensor',{
+        temperature:{
+            type:DataTypes.INTEGER,
+        },
+        humidity:{
+            type:DataTypes.INTEGER,
+        },
+        effectiveHumi:{
+            type:DataTypes.INTEGER,
+        },        
+    },{
+        timestamps:true,
+        paranoid:true,
+    })
+);
