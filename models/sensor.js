@@ -1,13 +1,13 @@
 module.exports=(sequelize,DataTypes)=>(
-    sequelize.define('sensor',{
-        temperature:{
-            type:DataTypes.INTEGER,
+    sequelize.define('sensor',{             // sensor 데이터베이스 정의
+        temperature:{                       // 온도 컬럼
+            type:DataTypes.INTEGER,         // 데이터 타입은 Integer
         },
-        humidity:{
-            type:DataTypes.INTEGER,
+        humidity:{                          // 습도 컬럼
+            type:DataTypes.INTEGER,         // 데이터 타입은 Integer   
         },
-        effectiveHumi:{
-            type:DataTypes.INTEGER,
+        effectiveHumi:{                     // 실효습도 컬럼
+            type:DataTypes.INTEGER,         // 데이터 타입은 Integer
         },        
     },{
         timestamps:true,
